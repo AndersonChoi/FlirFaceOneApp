@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FACE ONE with FLIR ONE</string>
+    <string name="title_activity_share">ShareActivity</string>
+</resources>

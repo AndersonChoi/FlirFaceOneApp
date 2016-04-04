@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#000"
+android:orientation="vertical">
+
+
+<RelativeLayout
+    android:id="@+id/flir_connect_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/iv_flir"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="60dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitStart" />
+
+
+    <RelativeLayout
+        android:id="@+id/button_relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#666">
+
+        <TextView
+            android:id="@+id/gps_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:text="FACE!!!"
+            android:visibility="invisible"
+            android:textColor="#f00"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/batteryLevelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:text="--"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_battery_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@id/batteryLevelTextView"
+            android:text="BAT : "
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/batteryChargeIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_battery_title"
+            android:src="@android:drawable/ic_lock_idle_low_battery"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_shutter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#00ffffff" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/shutterimage2" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:id="@+id/flir_disconnect_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:visibility="invisible">
+
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/disconnect_background" />
+
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:background="#222">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="FACE ONE with FLIR ONE"
+        android:textColor="#fff"
+        android:textSize="24dp"
+        android:typeface="serif" />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/cover"
+    android:background="#000000"
+    android:visibility="gone">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="460dp"
+        android:id="@+id/emotion_state"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="8dp" />
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:id="@+id/toastimage"
+        android:layout_above="@+id/share"
+        android:layout_alignParentStart="true" />
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_s"
+            android:id="@+id/backimage" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:id="@+id/share"
+        android:layout_above="@+id/back"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/share_s"
+            android:id="@+id/shareimage" />
+    </RelativeLayout>
+</RelativeLayout>
+
+</RelativeLayout>
+
