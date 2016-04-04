@@ -43,6 +43,8 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Handler;
 
+
+
 public class MainActivity extends Activity implements Device.PowerUpdateDelegate, Device.Delegate, FrameProcessor.Delegate, Device.StreamDelegate {
     private RelativeLayout cover, share, back;
     private ImageView shareimage, backimage, emotion_state, toastimage;
